@@ -1,0 +1,83 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 450px;
+    height: 70vh;
+}
+
+.game-board {
+    height: 60%;
+    width: 90%;
+    background-color: aqua;
+    padding: .5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.generated, .header{
+    display: grid;
+    grid-template-columns: 200px 100px 100px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.cor-num, .cor-pos {
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.cor-pos, .cor-num, .header>div:nth-child(2), .header>div:nth-child(3) {
+    border-left: 1px solid black;
+}
+
+.generated {
+    overflow: overlay;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Hides the Scrollbar when overflow is active */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90, 0.0);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.0);
+}

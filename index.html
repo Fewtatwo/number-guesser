@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" async defer></script>
+    <title>Guess the Number</title>
+</head> 
+<body>
+    <section id="wrapper">
+        <div class="game-board">
+            <div class="header">
+                <div>YOUR GUESS</div>
+                <div>CORRECT POSITIONS</div>
+                <div>CORRECT NUMBERS</div>
+            </div>
+            <div class="generated">
+                <div>
+                    <ul class="user-guess">
+                    </ul>
+                </div>
+                <div>
+                    <ul class="cor-pos">
+                    </ul>
+                </div>
+                <div>
+                    <ul class="cor-num">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="inputs">
+            <form id="input-form">
+                <input type="button" value="Start" onclick="startGame()">
+                <input type="number" name="guessNum" id="numBox" disabled required>
+                <input type="submit" value="Proceed">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
